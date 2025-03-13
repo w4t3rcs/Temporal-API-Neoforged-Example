@@ -1,0 +1,5 @@
+// 1.21.4	2025-03-10T22:30:19.997582	Tags for minecraft:block mod id example
+3706c943294b3f6a71c2c710960168905ce4e888 data/minecraft/tags/block/fences.json
+6d0fd8226a3598741dc6586face6cb6e4b8182b5 data/minecraft/tags/block/fence_gates.json
+4f247fc28aff7d19b416e3319a492347e798bdd9 data/minecraft/tags/block/mineable/pickaxe.json
+4f247fc28aff7d19b416e3319a492347e798bdd9 data/minecraft/tags/block/needs_diamond_tool.json
