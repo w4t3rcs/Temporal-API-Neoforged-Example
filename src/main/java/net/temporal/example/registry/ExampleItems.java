@@ -1,6 +1,5 @@
 package net.temporal.example.registry;
 
-import com.temporal.api.core.engine.io.context.InjectionContext;
 import com.temporal.api.core.engine.io.metadata.annotation.data.language.EnglishTranslation;
 import com.temporal.api.core.engine.io.metadata.annotation.data.model.ItemModel;
 import com.temporal.api.core.engine.io.metadata.annotation.data.properties.Compostable;
@@ -27,23 +26,26 @@ public class ExampleItems {
     @EnglishTranslation("Example Sword")
     public static final DeferredItem<?> EXAMPLE_SWORD = ITEM_FACTORY.createSword("example_sword", ToolMaterial.NETHERITE, 4, -2.6F);
 
-    @ItemModel
+    @ItemModel(ItemModelType.TRIMMED_ARMOR)
     @EnglishTranslation("Example Helmet")
     public static final DeferredItem<?> EXAMPLE_HELMET = ITEM_FACTORY.createArmor("example_helmet", ExampleArmorMaterials.EXAMPLE_ARMOR_MATERIAL, ArmorType.HELMET);
-    @ItemModel
+
+    @ItemModel(ItemModelType.TRIMMED_ARMOR)
     @EnglishTranslation("Example Chestplate")
     public static final DeferredItem<?> EXAMPLE_CHESTPLATE = ITEM_FACTORY.createArmor("example_chestplate", ExampleArmorMaterials.EXAMPLE_ARMOR_MATERIAL, ArmorType.CHESTPLATE);
-    @ItemModel
+
+    @ItemModel(ItemModelType.TRIMMED_ARMOR)
     @EnglishTranslation("Example Leggings")
     public static final DeferredItem<?> EXAMPLE_LEGGINGS = ITEM_FACTORY.createArmor("example_leggings", ExampleArmorMaterials.EXAMPLE_ARMOR_MATERIAL, ArmorType.LEGGINGS);
-    @ItemModel
+
+    @ItemModel(ItemModelType.TRIMMED_ARMOR)
     @EnglishTranslation("Example Boots")
     public static final DeferredItem<?> EXAMPLE_BOOTS = ITEM_FACTORY.createArmor("example_boots", ExampleArmorMaterials.EXAMPLE_ARMOR_MATERIAL, ArmorType.BOOTS);
-
 
     @ItemModel(ItemModelType.BOW)
     @EnglishTranslation("Example Bow")
     public static final DeferredItem<?> EXAMPLE_BOW = ITEM_FACTORY.createBow("example_bow");
+
     @ItemModel(ItemModelType.CROSSBOW)
     @EnglishTranslation("Example Crossbow")
     public static final DeferredItem<?> EXAMPLE_CROSSBOW = ITEM_FACTORY.createCrossbow("example_crossbow");

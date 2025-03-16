@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_smithing_trim_template": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:wild_armor_trim_smithing_template"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "example:example_cab5ae82-39ef-4bc9-9a91-3330b5246115_trim_recipe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_smithing_trim_template"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "example:example_cab5ae82-39ef-4bc9-9a91-3330b5246115_trim_recipe"
+    ]
+  }
+}

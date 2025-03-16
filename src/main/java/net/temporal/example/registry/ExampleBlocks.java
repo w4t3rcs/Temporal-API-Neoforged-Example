@@ -2,22 +2,20 @@ package net.temporal.example.registry;
 
 import com.temporal.api.core.engine.io.metadata.annotation.data.language.EnglishTranslation;
 import com.temporal.api.core.engine.io.metadata.annotation.data.model.BlockModel;
-import com.temporal.api.core.engine.io.metadata.annotation.data.model.CustomBlockModel;
 import com.temporal.api.core.engine.io.metadata.annotation.data.other.BlockLootTable;
 import com.temporal.api.core.engine.io.metadata.annotation.data.tag.BlockTagComponent;
 import com.temporal.api.core.engine.io.metadata.annotation.injection.Injected;
 import com.temporal.api.core.engine.io.metadata.annotation.injection.Registry;
 import com.temporal.api.core.engine.io.metadata.constant.BlockLootTableType;
 import com.temporal.api.core.engine.io.metadata.constant.BlockModelType;
+import com.temporal.api.core.registry.factory.other.BlockPropertiesFactory;
 import com.temporal.api.core.registry.factory.other.TreeGrowerFactory;
-import com.temporal.api.core.util.properties.BlockPropertiesFactory;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.neoforge.registries.DeferredBlock;
-import net.temporal.example.model.PottedBlockModel;
 import net.temporal.example.worldgen.ExampleConfiguredFeatures;
 
 @Injected(false)

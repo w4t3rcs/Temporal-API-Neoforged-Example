@@ -14,11 +14,11 @@ import java.util.EnumMap;
 @Injected(false)
 public class ExampleArmorMaterials {
     @ArmorAsset
-    public static ArmorMaterial EXAMPLE_ARMOR_MATERIAL = ArmorMaterialFactory.create("example_armor_material", Util.make(new EnumMap<>(ArmorType.class), (map) -> {
+    public static ArmorMaterial EXAMPLE_ARMOR_MATERIAL = ArmorMaterialFactory.create("example", Util.make(new EnumMap<>(ArmorType.class), (map) -> {
         map.put(ArmorType.BOOTS, 4);
         map.put(ArmorType.LEGGINGS, 7);
         map.put(ArmorType.CHESTPLATE, 9);
         map.put(ArmorType.HELMET, 4);
         map.put(ArmorType.BODY, 12);
-    }), 16, 4, 4F, 0.5F, ExampleItemTags.REPAIRS_EXAMPLE_ARMOR, SoundEvents.ARMOR_EQUIP_GENERIC);
+    }), 16, 4, 4F, 0.5F, ExampleItemTags.REPAIRS_EXAMPLE_ARMOR, SoundEvents.ARMOR_EQUIP_GENERIC, true);
 }

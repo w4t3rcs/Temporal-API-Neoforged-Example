@@ -2,12 +2,12 @@
   "layers": {
     "humanoid": [
       {
-        "texture": "example:example_armor_material"
+        "texture": "example:example"
       }
     ],
     "humanoid_leggings": [
       {
-        "texture": "example:example_armor_material"
+        "texture": "example:example"
       }
     ]
   }

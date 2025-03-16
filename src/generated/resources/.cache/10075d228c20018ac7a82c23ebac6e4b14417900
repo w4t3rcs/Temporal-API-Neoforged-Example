@@ -1,1 +1,5 @@
-// 1.21.4	2025-02-27T14:21:47.0936724	ApiRecipeProvider
+// 1.21.4	2025-03-16T21:39:39.7900162	ApiRecipeProvider
+1d08dbd93b5ddaaff427e848ef4cbc56e05060a6 data/example/advancement/recipes/food/example_fuel.json
+39cf99f6d90698cfb1c73d89921d0132afa5f1b3 data/example/advancement/recipes/misc/example_cab5ae82-39ef-4bc9-9a91-3330b5246115_trim_recipe.json
+e08bccb9dca90548f2dbac4ddcb2c93c905d4e9b data/example/recipe/example_cab5ae82-39ef-4bc9-9a91-3330b5246115_trim_recipe.json
+26597dd3090fdc05b57c62f33df845419a02a1ed data/example/recipe/example_fuel.json
