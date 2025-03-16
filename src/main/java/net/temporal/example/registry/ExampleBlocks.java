@@ -9,11 +9,7 @@ import com.temporal.api.core.engine.io.metadata.annotation.injection.Registry;
 import com.temporal.api.core.engine.io.metadata.constant.BlockLootTableType;
 import com.temporal.api.core.engine.io.metadata.constant.BlockModelType;
 import com.temporal.api.core.registry.factory.other.BlockPropertiesFactory;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.state.properties.BlockSetType;
-import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.temporal.example.worldgen.ExampleConfiguredFeatures;
 
@@ -74,23 +70,23 @@ public class ExampleBlocks {
     @BlockModel(BlockModelType.PLANKS_STAIRS)
     @BlockLootTable
     @EnglishTranslation("Example Stairs")
-    public static final DeferredBlock<?> EXAMPLE_STAIRS = BLOCK_FACTORY.createStair("example_stairs", BlockPropertiesFactory.planks(), Blocks.OAK_PLANKS);
+    public static final DeferredBlock<?> EXAMPLE_STAIRS = BLOCK_FACTORY.createStair("example_stairs", BlockPropertiesFactory.planks());
     @BlockModel(BlockModelType.PLANKS_BUTTON)
     @BlockLootTable
     @EnglishTranslation("Example Button")
-    public static final DeferredBlock<?> EXAMPLE_BUTTON = BLOCK_FACTORY.createButton("example_button", BlockPropertiesFactory.planks(), BlockSetType.OAK, 20);
+    public static final DeferredBlock<?> EXAMPLE_BUTTON = BLOCK_FACTORY.createButton("example_button");
     @BlockModel(BlockModelType.PLANKS_PRESSURE_PLATE)
     @BlockLootTable
     @EnglishTranslation("Example Pressure Plate")
-    public static final DeferredBlock<?> EXAMPLE_PRESSURE_PLATE = BLOCK_FACTORY.createPressurePlate("example_pressure_plate", BlockPropertiesFactory.planks(), BlockSetType.OAK);
+    public static final DeferredBlock<?> EXAMPLE_PRESSURE_PLATE = BLOCK_FACTORY.createPressurePlate("example_pressure_plate");
     @BlockTagComponent("fences")
     @BlockModel(BlockModelType.PLANKS_FENCE)
     @BlockLootTable
     @EnglishTranslation("Example Fence")
-    public static final DeferredBlock<?> EXAMPLE_FENCE = BLOCK_FACTORY.createFence("example_fence", BlockPropertiesFactory.planks());
+    public static final DeferredBlock<?> EXAMPLE_FENCE = BLOCK_FACTORY.createFence("example_fence");
     @BlockTagComponent("fence_gates")
     @BlockModel(BlockModelType.PLANKS_FENCE_GATE)
     @BlockLootTable
     @EnglishTranslation("Example Fence Gate")
-    public static final DeferredBlock<?> EXAMPLE_FENCE_GATE = BLOCK_FACTORY.createFenceGate("example_fence_gate", BlockPropertiesFactory.planks(), WoodType.OAK, SoundEvents.WOODEN_DOOR_OPEN, SoundEvents.WOODEN_DOOR_CLOSE);
+    public static final DeferredBlock<?> EXAMPLE_FENCE_GATE = BLOCK_FACTORY.createFenceGate("example_fence_gate");
 }
