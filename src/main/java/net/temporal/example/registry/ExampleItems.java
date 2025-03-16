@@ -27,18 +27,22 @@ public class ExampleItems {
     public static final DeferredItem<?> EXAMPLE_SWORD = ITEM_FACTORY.createSword("example_sword", ToolMaterial.NETHERITE, 4, -2.6F);
 
     @ItemModel(ItemModelType.TRIMMED_ARMOR)
+    @ItemTagComponent("trimmable_armor")
     @EnglishTranslation("Example Helmet")
     public static final DeferredItem<?> EXAMPLE_HELMET = ITEM_FACTORY.createArmor("example_helmet", ExampleArmorMaterials.EXAMPLE_ARMOR_MATERIAL, ArmorType.HELMET);
 
     @ItemModel(ItemModelType.TRIMMED_ARMOR)
+    @ItemTagComponent("trimmable_armor")
     @EnglishTranslation("Example Chestplate")
     public static final DeferredItem<?> EXAMPLE_CHESTPLATE = ITEM_FACTORY.createArmor("example_chestplate", ExampleArmorMaterials.EXAMPLE_ARMOR_MATERIAL, ArmorType.CHESTPLATE);
 
     @ItemModel(ItemModelType.TRIMMED_ARMOR)
+    @ItemTagComponent("trimmable_armor")
     @EnglishTranslation("Example Leggings")
     public static final DeferredItem<?> EXAMPLE_LEGGINGS = ITEM_FACTORY.createArmor("example_leggings", ExampleArmorMaterials.EXAMPLE_ARMOR_MATERIAL, ArmorType.LEGGINGS);
 
     @ItemModel(ItemModelType.TRIMMED_ARMOR)
+    @ItemTagComponent("trimmable_armor")
     @EnglishTranslation("Example Boots")
     public static final DeferredItem<?> EXAMPLE_BOOTS = ITEM_FACTORY.createArmor("example_boots", ExampleArmorMaterials.EXAMPLE_ARMOR_MATERIAL, ArmorType.BOOTS);
 

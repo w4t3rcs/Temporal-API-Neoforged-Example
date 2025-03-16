@@ -38,6 +38,7 @@ public class ExampleBlocks {
     @BlockLootTable(BlockLootTableType.SILK_TOUCH)
     @EnglishTranslation("Example Flower")
     public static final DeferredBlock<?> EXAMPLE_FLOWER = BLOCK_FACTORY.createFlower("example_flower", MobEffects.DAMAGE_RESISTANCE, 1);
+
     @BlockLootTable(BlockLootTableType.POTTED_CONTENT)
     @EnglishTranslation("Potted Example Flower")
     public static final DeferredBlock<?> POTTED_EXAMPLE_FLOWER = BLOCK_FACTORY.createPottedFlower("potted_example_flower", EXAMPLE_FLOWER);
@@ -46,14 +47,17 @@ public class ExampleBlocks {
     @BlockLootTable(BlockLootTableType.SILK_TOUCH)
     @EnglishTranslation("Example Leaves")
     public static final DeferredBlock<?> EXAMPLE_LEAVES = BLOCK_FACTORY.createLeaves("example_leaves");
+
     @BlockModel(BlockModelType.LOG)
     @BlockLootTable(BlockLootTableType.SILK_TOUCH)
     @EnglishTranslation("Example Stripped Log")
     public static final DeferredBlock<?> EXAMPLE_STRIPPED_LOG = BLOCK_FACTORY.createLog("example_stripped_log");
+
     @BlockModel(BlockModelType.LOG)
     @BlockLootTable
     @EnglishTranslation("Example Log")
     public static final DeferredBlock<?> EXAMPLE_LOG = BLOCK_FACTORY.createStrippableLog("example_log", EXAMPLE_STRIPPED_LOG);
+
     @BlockModel(BlockModelType.CROSS)
     @BlockLootTable
     @EnglishTranslation("Example Sapling")
@@ -63,27 +67,33 @@ public class ExampleBlocks {
     @BlockLootTable
     @EnglishTranslation("Example Planks")
     public static final DeferredBlock<?> EXAMPLE_PLANKS = BLOCK_FACTORY.create("example_planks", BlockPropertiesFactory.planks());
+
     @BlockModel(BlockModelType.PLANKS_SLAB)
     @BlockLootTable
     @EnglishTranslation("Example Slab")
     public static final DeferredBlock<?> EXAMPLE_SLAB = BLOCK_FACTORY.createSlab("example_slab", BlockPropertiesFactory.planks());
+
     @BlockModel(BlockModelType.PLANKS_STAIRS)
     @BlockLootTable
     @EnglishTranslation("Example Stairs")
     public static final DeferredBlock<?> EXAMPLE_STAIRS = BLOCK_FACTORY.createStair("example_stairs", BlockPropertiesFactory.planks());
+
     @BlockModel(BlockModelType.PLANKS_BUTTON)
     @BlockLootTable
     @EnglishTranslation("Example Button")
     public static final DeferredBlock<?> EXAMPLE_BUTTON = BLOCK_FACTORY.createButton("example_button");
+
     @BlockModel(BlockModelType.PLANKS_PRESSURE_PLATE)
     @BlockLootTable
     @EnglishTranslation("Example Pressure Plate")
     public static final DeferredBlock<?> EXAMPLE_PRESSURE_PLATE = BLOCK_FACTORY.createPressurePlate("example_pressure_plate");
+
     @BlockTagComponent("fences")
     @BlockModel(BlockModelType.PLANKS_FENCE)
     @BlockLootTable
     @EnglishTranslation("Example Fence")
     public static final DeferredBlock<?> EXAMPLE_FENCE = BLOCK_FACTORY.createFence("example_fence");
+
     @BlockTagComponent("fence_gates")
     @BlockModel(BlockModelType.PLANKS_FENCE_GATE)
     @BlockLootTable
