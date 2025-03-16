@@ -9,7 +9,6 @@ import com.temporal.api.core.engine.io.metadata.annotation.injection.Registry;
 import com.temporal.api.core.engine.io.metadata.constant.BlockLootTableType;
 import com.temporal.api.core.engine.io.metadata.constant.BlockModelType;
 import com.temporal.api.core.registry.factory.other.BlockPropertiesFactory;
-import com.temporal.api.core.registry.factory.other.TreeGrowerFactory;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.Blocks;
@@ -42,27 +41,27 @@ public class ExampleBlocks {
     @BlockModel(BlockModelType.FLOWER)
     @BlockLootTable(BlockLootTableType.SILK_TOUCH)
     @EnglishTranslation("Example Flower")
-    public static final DeferredBlock<?> EXAMPLE_FLOWER = BLOCK_FACTORY.createFlower("example_flower", BlockPropertiesFactory.flower(), MobEffects.DAMAGE_RESISTANCE, 1);
+    public static final DeferredBlock<?> EXAMPLE_FLOWER = BLOCK_FACTORY.createFlower("example_flower", MobEffects.DAMAGE_RESISTANCE, 1);
     @BlockLootTable(BlockLootTableType.POTTED_CONTENT)
     @EnglishTranslation("Potted Example Flower")
-    public static final DeferredBlock<?> POTTED_EXAMPLE_FLOWER = BLOCK_FACTORY.createPottedFlower("potted_example_flower", BlockPropertiesFactory.flowerPot(), EXAMPLE_FLOWER);
+    public static final DeferredBlock<?> POTTED_EXAMPLE_FLOWER = BLOCK_FACTORY.createPottedFlower("potted_example_flower", EXAMPLE_FLOWER);
 
     @BlockModel(BlockModelType.CUTOUT_CUBED)
     @BlockLootTable(BlockLootTableType.SILK_TOUCH)
     @EnglishTranslation("Example Leaves")
-    public static final DeferredBlock<?> EXAMPLE_LEAVES = BLOCK_FACTORY.createLeaves("example_leaves", BlockPropertiesFactory.leaves());
+    public static final DeferredBlock<?> EXAMPLE_LEAVES = BLOCK_FACTORY.createLeaves("example_leaves");
     @BlockModel(BlockModelType.LOG)
     @BlockLootTable(BlockLootTableType.SILK_TOUCH)
     @EnglishTranslation("Example Stripped Log")
-    public static final DeferredBlock<?> EXAMPLE_STRIPPED_LOG = BLOCK_FACTORY.createLog("example_stripped_log", BlockPropertiesFactory.wood());
+    public static final DeferredBlock<?> EXAMPLE_STRIPPED_LOG = BLOCK_FACTORY.createLog("example_stripped_log");
     @BlockModel(BlockModelType.LOG)
     @BlockLootTable
     @EnglishTranslation("Example Log")
-    public static final DeferredBlock<?> EXAMPLE_LOG = BLOCK_FACTORY.createStrippableLog("example_log", BlockPropertiesFactory.wood(), EXAMPLE_STRIPPED_LOG);
+    public static final DeferredBlock<?> EXAMPLE_LOG = BLOCK_FACTORY.createStrippableLog("example_log", EXAMPLE_STRIPPED_LOG);
     @BlockModel(BlockModelType.CROSS)
     @BlockLootTable
     @EnglishTranslation("Example Sapling")
-    public static final DeferredBlock<?> EXAMPLE_SAPLING = BLOCK_FACTORY.createSapling("example_sapling", BlockPropertiesFactory.sapling(), TreeGrowerFactory.create("example_grower", ExampleConfiguredFeatures.EXAMPLE_TREE_FEATURE));
+    public static final DeferredBlock<?> EXAMPLE_SAPLING = BLOCK_FACTORY.createSapling("example_sapling", ExampleConfiguredFeatures.EXAMPLE_TREE_FEATURE);
 
     @BlockModel
     @BlockLootTable
