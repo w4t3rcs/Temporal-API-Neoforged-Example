@@ -1,5 +1,7 @@
 package net.temporal.example;
 
+import com.temporal.api.ApiMod;
+import com.temporal.api.core.compat.SimpleDependencyProcessBuilder;
 import com.temporal.api.core.engine.TemporalEngine;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -14,11 +16,14 @@ public class ExampleMod {
 
     public ExampleMod(IEventBus modEventBus, ModContainer modContainer) {
         TemporalEngine.run(ExampleMod.class, modEventBus, modContainer);
+        SimpleDependencyProcessBuilder.createBuilder("temporalapi")
+                .addProcess(() -> ApiMod.LOGGER.debug("hello"))
+                .addProcess(() -> ApiMod.LOGGER.debug("world :D"))
+                .build();
         NeoForge.EVENT_BUS.register(this);
     }
 
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-
     }
 }
