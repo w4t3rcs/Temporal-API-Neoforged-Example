@@ -16,7 +16,7 @@ public class ExampleMod {
 
     public ExampleMod(IEventBus modEventBus, ModContainer modContainer) {
         TemporalEngine.run(ExampleMod.class, modEventBus, modContainer);
-        SimpleDependencyProcessBuilder.createBuilder("temporalapi")
+        SimpleDependencyProcessBuilder.create("temporalapi")
                 .addProcess(() -> ApiMod.LOGGER.debug("hello"))
                 .addProcess(() -> ApiMod.LOGGER.debug("world :D"))
                 .build();
