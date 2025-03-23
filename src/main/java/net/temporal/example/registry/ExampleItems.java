@@ -15,7 +15,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 @Injected(false)
 public class ExampleItems {
     @Registry
-    public static final ExampleItemFactory ITEM_FACTORY = new ExampleItemFactory();
+    private static final ExampleItemFactory ITEM_FACTORY = new ExampleItemFactory();
 
     @ItemModel
     @ItemTagComponent("repairs_example_armor")

@@ -16,7 +16,7 @@ import net.temporal.example.worldgen.ExampleConfiguredFeatures;
 @Injected(false)
 public class ExampleBlocks {
     @Registry
-    public static final ExampleBlockFactory BLOCK_FACTORY = new ExampleBlockFactory();
+    private static final ExampleBlockFactory BLOCK_FACTORY = new ExampleBlockFactory();
 
     @BlockModel
     @BlockLootTable
