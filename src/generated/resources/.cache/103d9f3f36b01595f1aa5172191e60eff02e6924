@@ -1,8 +1,9 @@
-// 1.21.4	2025-03-21T09:23:12.2972808	Registries
+// 1.21.4	2025-06-24T15:30:04.9418565	Registries
 6534f2707cd89ec8be1be37f16a7c3445c152d92 data/example/neoforge/biome_modifier/add_example_flower_feature.json
 600e7f26385557253e3dd4a2e01a74994e016407 data/example/neoforge/biome_modifier/add_example_grass_feature.json
 27780e9ba0eb8aebc311d7efe81eec1886cc4e7c data/example/neoforge/biome_modifier/add_example_ore_feature.json
 3b8f1c122d7705d7a745e440de728ea050d9db99 data/example/neoforge/biome_modifier/add_example_tree_feature.json
+0140e84afb72f6d93a87f11036708a9581e94cbc data/example/painting_variant/example.json
 135cd79cb5d9a9b9949a833b723581d0570aafab data/example/worldgen/configured_feature/example_flower_feature.json
 a1f4dc969144c53aa6189da0e213b8bbcc0ec002 data/example/worldgen/configured_feature/example_grass_feature.json
 2903d102be81161d5e9c53b03f400854c50763ce data/example/worldgen/configured_feature/example_ore_feature.json

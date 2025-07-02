@@ -1,5 +1,6 @@
 package net.temporal.example.registry;
 
+import com.temporal.api.core.engine.io.context.InjectionContext;
 import com.temporal.api.core.engine.io.metadata.annotation.data.language.EnglishTranslation;
 import com.temporal.api.core.engine.io.metadata.annotation.data.model.BlockModel;
 import com.temporal.api.core.engine.io.metadata.annotation.data.other.BlockLootTable;
@@ -14,9 +15,9 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.temporal.example.worldgen.ExampleConfiguredFeatures;
 
 @Injected(false)
-public class ExampleBlocks {
+public final class ExampleBlocks {
     @Registry
-    private static final ExampleBlockFactory BLOCK_FACTORY = new ExampleBlockFactory();
+    private static final ExampleBlockFactory BLOCK_FACTORY = InjectionContext.getFromInstance(ExampleBlockFactory.class);
 
     @BlockModel
     @BlockLootTable
