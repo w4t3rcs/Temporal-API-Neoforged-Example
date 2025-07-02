@@ -12,7 +12,7 @@ import net.temporal.example.tag.ExampleItemTags;
 import java.util.EnumMap;
 
 @Injected(false)
-public class ExampleArmorMaterials {
+public final class ExampleArmorMaterials {
     @ArmorAsset
     public static ArmorMaterial EXAMPLE_ARMOR_MATERIAL = ArmorMaterialFactory.create("example", Util.make(new EnumMap<>(ArmorType.class), (map) -> {
         map.put(ArmorType.BOOTS, 4);

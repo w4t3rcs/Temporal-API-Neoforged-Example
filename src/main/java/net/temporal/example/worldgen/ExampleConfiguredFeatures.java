@@ -35,7 +35,4 @@ public final class ExampleConfiguredFeatures {
             featureSize = @TreeGeneration.FeatureSize(limit = 2, lowerSize = 1, upperSize = 2),
             baseValue = 1, chance = 1, addedAmount = 1)
     public static final ResourceKey<ConfiguredFeature<?, ?>> EXAMPLE_TREE_FEATURE = ConfiguredFeatureUtils.createKey("example_tree_feature");
-
-    private ExampleConfiguredFeatures() {
-    }
 }
