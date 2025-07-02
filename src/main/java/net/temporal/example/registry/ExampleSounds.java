@@ -9,7 +9,7 @@ import net.minecraft.core.Holder;
 import net.minecraft.sounds.SoundEvent;
 
 @Injected(false)
-public class ExampleSounds {
+public final class ExampleSounds {
     @Registry
     private static final SoundEventFactory SOUND_EVENT_FACTORY = new SoundEventFactory();
 

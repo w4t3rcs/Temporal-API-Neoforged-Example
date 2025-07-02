@@ -1,5 +1,6 @@
 package net.temporal.example.registry;
 
+import com.temporal.api.core.engine.io.context.InjectionContext;
 import com.temporal.api.core.engine.io.metadata.annotation.data.language.EnglishTranslation;
 import com.temporal.api.core.engine.io.metadata.annotation.data.model.ItemModel;
 import com.temporal.api.core.engine.io.metadata.annotation.data.properties.Compostable;
@@ -15,7 +16,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 @Injected(false)
 public class ExampleItems {
     @Registry
-    private static final ExampleItemFactory ITEM_FACTORY = new ExampleItemFactory();
+    private static final ExampleItemFactory ITEM_FACTORY = InjectionContext.getFromInstance(ExampleItemFactory.class);
 
     @ItemModel
     @ItemTagComponent("repairs_example_armor")

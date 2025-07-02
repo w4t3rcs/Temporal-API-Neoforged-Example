@@ -98,7 +98,7 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 dependencies {
     //It uses file implementation, but don't do it
     //ONLY FOR TEST PURPOSES
-    implementation files('test/temporalapi-1.8.0.jar')
+    implementation files('test/temporalapi-1.8.3.jar')
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.
